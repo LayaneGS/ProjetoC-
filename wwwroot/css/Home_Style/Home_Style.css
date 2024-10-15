@@ -1,0 +1,46 @@
+﻿h1 {
+    font-family: 'Yesteryear';
+    font-size: 24px;
+    margin: 30;
+    text-align: left;
+    position: absolute;/* Opcional, se quiser fixar o título */
+    top: 20px; /* Alinha ao topo */
+    left: 50px; /* Alinha à esquerda */
+}
+
+h4 {
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+
+/*#region cabeçaDePika*/
+.cabeçalho  {
+    background-color: #D71994;
+    padding: 150px;
+    color: white;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabeçalho img {
+    
+}
+
+/*#endregion*/
+
+.links {
+    text-align: right;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 10px 15px;
+    color: white;
+}
