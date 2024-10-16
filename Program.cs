@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetoC_.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("ConnectionString 'DefaultConnection' NotFound");
+
+builder.Services.AddDbContext<AppDbContext>(options => options.UseMySQL(connectionString));
 
 // Add services to the container.
 builder.Services.AddRazorPages();

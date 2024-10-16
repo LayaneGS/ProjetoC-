@@ -14,20 +14,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Makes</title>
     <link href="https://fonts.google.com/share?selection.family=Yesteryear" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/Home_Style/Home_Style.css">
+    <link href="https://fonts.google.com/share?selection.family=Sanchez:ital@0;1" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Home_Style/Home_Style.css"> <!-- Vincula o arquivo CSS -->
 </head>
+
 <body>
     <header class="cabeçalho">
         <h1> Beauty Makes</h1>
         <h4>Porque Você Merece Sentir-se Linda</h4>
-        <img src="/Assets/Images/Group 49.png" alt="Uma imagem local">
+        <h2>Descubra o Segredo de Uma<br> Pele Radiante</h2>
+        <h3>Estamos aqui para fornecer á você<br>o melhor em Skincare e beleza!</h3>
+        <img src="~/Assets/Images/Group 49.png" alt="Uma imagem local">
+
         <nav>
             <ul class="links">
                 <a href="home">Produtos</a>
                 <a href="ofertas">Ofertas</a>
                 <a href="maisVendidos">Mais Vendidos</a>
-                <a href="sobre">Sobree</a>
+                <a href="sobre">Sobre</a>
             </ul>
         </nav>
+
+        <form action="/buscar" method="GET">
+            <input class="pesquisar" type="text" name="q" placeholder="O que você procura hoje?" required>
+            <button type="submit">Buscar</button>
+        </form>
+
     </header>
 </body>

@@ -1,36 +1,42 @@
 ﻿h1 {
     font-family: 'Yesteryear';
-    font-size: 24px;
-    margin: 30;
+    font-size: 15px;
     text-align: left;
-    position: absolute;/* Opcional, se quiser fixar o título */
+    position: absolute; /* Opcional, se quiser fixar o título */
     top: 20px; /* Alinha ao topo */
-    left: 50px; /* Alinha à esquerda */
+    left: 75px; /* Alinha à esquerda */
 }
 
 h4 {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 400;
     position: absolute;
-    top: 50px;
-    left: 45px;
+    top: 40px;
+    left: 50px;
 }
 
-/*#region cabeçaDePika*/
-.cabeçalho  {
+h2 {
+    font-family: Sanchez;
+    font-weight: 300;
+    font-size: 35px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 100;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+}
+
+.cabeçalho {
     background-color: #D71994;
-    padding: 150px;
+    padding-bottom: 140px;
     color: white;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
 }
-
-.cabeçalho img {
-    
-}
-
-/*#endregion*/
 
 .links {
     text-align: right;
@@ -40,7 +46,25 @@ h4 {
     list-style-type: none;
 }
 
+.cabeçalho img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /*Centraliza a imagem*/
+    margin-top: 0px;
+    position: relative;
+    top: 209px; /* Move a imagem 50 pixels para baixo */
+}
+
 nav a {
     padding: 10px 15px;
     color: white;
+}
+
+
+.pesquisar {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Cantos arredondados */
+    left: 100px;
 }
