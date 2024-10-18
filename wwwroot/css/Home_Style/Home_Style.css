@@ -1,70 +1,81 @@
-﻿h1 {
-    font-family: 'Yesteryear';
-    font-size: 15px;
-    text-align: left;
-    position: absolute; /* Opcional, se quiser fixar o título */
-    top: 20px; /* Alinha ao topo */
-    left: 75px; /* Alinha à esquerda */
-}
+﻿
 
-h4 {
-    font-size: 10px;
-    font-weight: 400;
-    position: absolute;
-    top: 40px;
-    left: 50px;
-}
-
-h2 {
-    font-family: Sanchez;
-    font-weight: 300;
-    font-size: 35px;
-    position: absolute;
-    top: 80px;
-    left: 50px;
-}
-
-h3 {
-    font-size: 15px;
-    font-weight: 100;
-    position: absolute;
-    top: 180px;
-    left: 50px;
-}
-
-.cabeçalho {
-    background-color: #D71994;
-    padding-bottom: 140px;
+.logo-site {
+    font-family: Yesteryear;
     color: white;
+    font-size: 16px;
+    position: relative;
+    left: 55px;
+    top: 8px;
+}
+
+.logo-site2 {
+    font-family: Yesteryear;
+    font-size: 10px;
+    color: white;
+    position: relative;
+    left: 35px;
+}
+
+.mensagem1 {
+    font-family: Sanchez;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 90px;
+    top: 20px;
+}
+
+.mensagem2 {
+    font-size: 15px;
+    color: white;
+    position: relative;
+    left: 90px;
+    top: 5px;
 }
 
 .links {
-    text-align: right;
+    text-decoration: none;
+    word-spacing: 40px;
     position: absolute;
+    right: 180px;
     top: 20px;
-    right: 45px;
-    list-style-type: none;
 }
 
-.cabeçalho img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /*Centraliza a imagem*/
-    margin-top: 0px;
+.mais-vendidos {
+    word-spacing: 15px;
+}
+
+.img49 {
     position: relative;
-    top: 209px; /* Move a imagem 50 pixels para baixo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+    top: -35px;
 }
 
-nav a {
-    padding: 10px 15px;
-    color: white;
+.img27 {
+    position: absolute;
+    top: 236px;
+    right: 165px;
 }
-
 
 .pesquisar {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 20px; /* Cantos arredondados */
-    left: 100px;
+    position: absolute;
+    top: 310px;
+    left: 135px;
 }
+
+.estilo-botao {
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.site-header {
+    background-color: #D71994;
+    height: 476px;
+}
+
+

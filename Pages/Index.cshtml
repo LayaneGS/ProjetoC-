@@ -1,13 +1,4 @@
-﻿@page
-@model ProjetoC_.Pages.HomeModel
-
-
-
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -15,30 +6,33 @@
     <title>Beauty Makes</title>
     <link href="https://fonts.google.com/share?selection.family=Yesteryear" rel="stylesheet">
     <link href="https://fonts.google.com/share?selection.family=Sanchez:ital@0;1" rel="stylesheet">
-    <link rel="stylesheet" href="/css/Home_Style/Home_Style.css"> <!-- Vincula o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <h1> Beauty Makes</h1>
-        <h4>Porque Você Merece Sentir-se Linda</h4>
-        <h2>Descubra o Segredo de Uma<br> Pele Radiante</h2>
-        <h3>Estamos aqui para fornecer á você<br>o melhor em Skincare e beleza!</h3>
-        <img src="~/Assets/Images/Group 49.png" alt="Uma imagem local">
+    <header class="site-header">
+        <h1 class="logo-site"> Beauty Makes</h1>
+        <h4 class="logo-site2">Porque Você Merece Sentir-se Linda</h4>
+        <h2 class="mensagem1">Descubra o Segredo de Uma<br> Pele Radiante</h2>
+        <h3 class="mensagem2">Estamos aqui para fornecer á você<br>o melhor em Skincare e beleza!</h3>
 
+        <div class="img49">
+            <img src="assets/Group 49.png" alt="Uma imagem local">
+        </div>
         <nav>
             <ul class="links">
-                <a href="home">Produtos</a>
-                <a href="ofertas">Ofertas</a>
-                <a href="maisVendidos">Mais Vendidos</a>
-                <a href="sobre">Sobre</a>
+                <a href="#">Produtos</a>
+                <a href="#">Ofertas</a>
+                <a href="#" id="mais-vendidos">Mais Vendidos</a>
+                <a href="#">Sobre</a>
             </ul>
         </nav>
-
-        <form action="/buscar" method="GET">
-            <input class="pesquisar" type="text" name="q" placeholder="O que você procura hoje?" required>
+        <img src="assets/Group 27.png" class="img27" alt="Uma imagem local">
+        <form class="pesquisar" action="/buscar" method="GET">
+            <input class="estilo-botao" type="text" name="q" placeholder="O que você procura hoje?" required>
             <button type="submit">Buscar</button>
         </form>
-
     </header>
 </body>
