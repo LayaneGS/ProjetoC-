@@ -1,14 +1,18 @@
-﻿
+﻿@page
+@model ProjetoC_.Pages.HomeModel
+@{
+    Layout = null;
+}
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Makes</title>
     <link href="https://fonts.google.com/share?selection.family=Yesteryear" rel="stylesheet">
     <link href="https://fonts.google.com/share?selection.family=Sanchez:ital@0;1" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="~/css/Home_Style/Home_Style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -21,7 +25,7 @@
         <h3 class="mensagem2">Estamos aqui para fornecer á você<br>o melhor em Skincare e beleza!</h3>
 
         <div class="img49">
-            <img src="assets/Group 49.png" alt="Uma imagem local">
+            <img src="~/Assets/Images/Group 49.png" alt="Uma imagem local">
         </div>
         <nav>
             <ul class="links">
@@ -31,10 +35,18 @@
                 <a href="#">Sobre</a>
             </ul>
         </nav>
-        <img src="assets/Group 27.png" class="img27" alt="Uma imagem local">
+        <img src="~/Assets/Images/Group 27.png" class="img27" alt="Uma imagem local">
         <form class="pesquisar" action="/buscar" method="GET">
             <input class="estilo-botao" type="text" name="q" placeholder="O que você procura hoje?" required>
             <button type="submit">Buscar</button>
+
+            <button class="cta">
+                <span>Hover me</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
         </form>
     </header>
 </body>
