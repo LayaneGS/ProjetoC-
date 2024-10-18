@@ -6,6 +6,8 @@
         public int Id { get; set; }
         public DateTime Data_Pedido { get; set; }
         public decimal Total { get; set; }
-        public enum Status { Active, Inactive, Pending }
+        public enum Status { Active, Inactive, Pending } 
+
+        public ICollection<ItensPedido> itensPedidos { get; set; } 
     }
 }

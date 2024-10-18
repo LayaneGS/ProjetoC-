@@ -10,5 +10,9 @@
         public string Marca { get; set; }
         public string Categoria { get; set; }
         public DateTime Data_Adcionado { get; set; }
+
+
+        public ICollection<ItensPedido> ItensPedido { get; set; } //ABRE A CONEXÃO COM A TABELA DESEJADA
+
     }
 }
